@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[german]{babel}
+\usepackage[utf8x]{inputenc}
+\newtheoremstyle{generalpurposedef}
+{1em}
+{1em}
+{}
+{}
+{\bfseries}
+{:}
+{.5em}
+{}
+%------
+%use for theorems and such
+\theoremstyle{generalpurposedef}
+\newtheorem{task}{Aufgabe}
+\newtheoremstyle{generalpurposetsk}
+{1em}
+{1em}
+{}
+{}
+{\bfseries}
+{$\dagger$:}
+{.5em}
+{}
+%------
+%use for theorems and such
+\theoremstyle{generalpurposetsk}
+\newtheorem{htask}[task]{Aufgabe}
+\addto\captionsgerman{\renewcommand\proofname{Lösung}}
+\renewcommand\qedsymbol{}
+\usepackage{environ}
+\NewEnviron{killcontents}{}
+\let\proof\killcontents
+\let\endproof\endkillcontents
+\usepackage{framed}
+\usepackage{dashrule}
+
+
+\begin{document}
+\title{\line(1,0){250}\\Tag 1\\\line(1,0){250}}
+\date{}
+\author{\itshape Vorkurs Mathematik für Nebenfächler 2018}
+\maketitle
+\begin{framed}
+	\noindent \scriptsize
+	\textsc{Symbole und Definitionen:} $\mathbb{N} = \{1,2,3,...\}$(natürliche Zahlen), $\mathbb{Z}:= \{...,-2,-1,0,1,2,...\}$ (ganze Zahlen), $\mathbb{Q} := \{p/q~|~p,q\in \mathbb{Z},q\neq 0\}$ (rationale Zahlen)
+\end{framed}
+\section*{Aufgaben}
+\begin{task}
+	$8$ Maschinen erledigen eine Arbeit in $5$ Tagen. Wie lange brauchen $10$ Maschinen f\"ur dieselbe Aufgabe?
+\end{task}
+\begin{task}
+	Ein $40$cm langer Draht vom Durchmesser $4$mm hat die Masse $36,7$g. Wieviel Meter Draht vom gleichen Material, aber vom Durchmesser $6$mm haben die Masse $90$kg? (Haftmann, 1.3)
+\end{task}
+\begin{task}
+	Draht aus gleichem Material, aber von unterschiedlichem Durchmesser, wird mit den Angaben $120$g/m und $85$g/m angeboten. Die zuerst genannte Sorte hat einen Durchmesser von $5$mm. Welchen Durchmesser hat die zweite Sorte?
+\end{task}
+\begin{task}
+	$15$ Kugeln mit einem Umfang von $70$cm wiegen $6,5$kg. Wieviel wiegen $25$ Kugeln aus gleichem Material mit einem Umfang von $60$cm? (Haftmann 1.5)
+\end{task}
+\begin{task}
+	Die Schallgeschwindigkeit in Luft betr\"agt $345 \frac{m}{s}$ bei $24^\circ$C. Der Einfluss der Temperatur auf die Schallgeschwindigkeit in Gasen wird durch die Gleichung
+	\[
+	\frac{v_1}{v_2}=\sqrt{\frac{T_1}{T_2}}
+	\]
+	bestimmt, wobei $v_1$ und $v_2$ die Geschwindigkeiten bei den absoluten Temperaturen $T_1$ und $T_2$ sind. Bestimmen Sie die Schallgeschwindigkeit in Luft bei einer Temperatur von $30^\circ$C. (Hinweis: Absolute Temperaturen werden in Kelvin angegeben. Dabei gilt $T_K-273,15=T_C$.)
+\end{task}
+\dotfill
+\begin{task}
+Sch\"uler haben eine quadratische Fl\"ache bemalt. Da es sehr sch\"on geworden ist, d\"urfen sie die vier Quadratseiten um $8m$ verl\"angern. Dies bedeutet eine Vergr\"o\ss erung der Fl\"ache um $336m^2$. Welche Ma\ss e haben die alte und die neue bemalte Fl\"ache?
+\end{task}
+\begin{htask}
+	Tim behauptet: ``Addierst Du eine positive rationale Zahl (ungleich Null) zu deren Kehrwert, so hat das Ergebnis mindestens den Wert $2$.'' Beweisen Sie diese Behauptung.
+\end{htask}
+\begin{proof}
+	Wir bezeichnen, wie in der Vorlesung, die Menge der rationalen Zahlen mit $\mathbb{Q}$. Dann gibt es für jede Zahl $p\in \mathbb{Q}$ ganze Zahlen $a,b\in \mathbb{Z}$, sodass $p = a/b$. Für den Kehrwehrt gilt dann $1/p = b/a$. Weil $p>0$ gelten soll, können wir annehmen, dass $a,b>0$ sind. Für die Summe von $a,b$ gilt dann
+	\[
+	1+\frac{1}{p} =  \frac{a}{b} + \frac{b}{a}= \frac{a^2+b^2}{ab} = \frac{a^2+b^2+2ab-2ab}{ab} \overset{\ast}{=} \frac{(a+b)^2+2ab}{ab} = \underbrace{\frac{(a+b)^2}{ab}}_{\geq 0} + 2 \geq 2,
+	\]
+	wobei in $\ast$ die erste binomische Formel genutzt wurde.
+	
+\end{proof}	
+\hrule
+\vspace{.5cm}
+\noindent
+\textsc{Hinweise:}\\
+Schwierigere Aufgaben, bei denen man vielleicht auch nicht direkt einen Bezug zur Vorlesung erkennt, sind mit einem $\dagger$ gekennzeichnet.\\
+Viele Aufgaben sind folgender Literatur entnommen:
+\begin{itemize}
+	\item ``Br\"uckenkurs Mathematik f\"ur Studieneinsteiger aller Disziplinen'', G. Walz, F. Zeilfelder, Th. Rie\ss inger, Spektrum Verlag, 1. Auflage, 2005
+	\item ``Aufgabensammlung zur H\"oheren Mathematik mit ausf\"uhrlichen L\"osungen'' von Dr. Rolf Haftmann, TU Chemnitz.
+\end{itemize}
+\end{document}
