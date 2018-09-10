@@ -1,45 +1,8 @@
 \documentclass[11pt]{article}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{graphicx}
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\usepackage[german]{babel}
-\usepackage[utf8x]{inputenc}
-\newtheoremstyle{generalpurposedef}
-{1em}
-{1em}
-{}
-{}
-{\bfseries}
-{:}
-{.5em}
-{}
-%------
-%use for theorems and such
-\theoremstyle{generalpurposedef}
-\newtheorem{task}{Aufgabe}
-\newtheoremstyle{generalpurposetsk}
-{1em}
-{1em}
-{}
-{}
-{\bfseries}
-{$\dagger$:}
-{.5em}
-{}
-%------
-%use for theorems and such
-\theoremstyle{generalpurposetsk}
-\newtheorem{htask}[task]{Aufgabe}
-\addto\captionsgerman{\renewcommand\proofname{Lösung}}
-\renewcommand\qedsymbol{}
-\usepackage{environ}
-\NewEnviron{killcontents}{}
-\let\proof\killcontents
-\let\endproof\endkillcontents
-\usepackage{framed}
-\usepackage{dashrule}
-
-
+\usepackage{../vorkurs}
+%\NewEnviron{killcontents}{}
+%\let\proof\killcontents
+%\let\endproof\endkillcontents
 \begin{document}
 \title{\line(1,0){250}\\Tag 1\\\line(1,0){250}}
 \date{}
@@ -62,6 +25,10 @@
 \begin{task}
 	$15$ Kugeln mit einem Umfang von $70$cm wiegen $6,5$kg. Wieviel wiegen $25$ Kugeln aus gleichem Material mit einem Umfang von $60$cm? (Haftmann 1.5)
 \end{task}
+\begin{proof}
+	Wir bezeichnen mit $m_1$ die Masse einer Kugel des Umfangs $u_1 = 70$cm. Nach Aufgabe gilt $15\cdot m_1 = 6.5$kg. Wenn man beide Seiten durch $15$ teil, erhält man für die Masse einer solchen Kugel $m_1 = 6.5/15~\mathrm{kg}$. Weiterhin sei $m_2$ die Masse einer Kugel mit Umfang $u_2 = 60$cm.\\
+	Wir wollen nun wieder die Gleichheit des Verhältnises von Masse zu Volumen für \textit{jeweils eine Kugel} nutzen. Dazu bezeichnen wir die Radii der Kugeln mit $r_1$ bzw. $r_2$; die Volumen der beiden Kugeln sind dann jeweils gegeben durch $V_1 = 4/3\pi r_1^3$ bzw. $V_2 = 4/3\pi r_2^3$. Weil es sich um Kugeln handelt, gilt zudem $r_1 = \frac{u_1}{2\pi}$ bzw. $r_2  = \frac{u_2}{2\pi}$.
+\end{proof}
 \begin{task}
 	Die Schallgeschwindigkeit in Luft betr\"agt $345 \frac{m}{s}$ bei $24^\circ$C. Der Einfluss der Temperatur auf die Schallgeschwindigkeit in Gasen wird durch die Gleichung
 	\[
@@ -69,6 +36,7 @@
 	\]
 	bestimmt, wobei $v_1$ und $v_2$ die Geschwindigkeiten bei den absoluten Temperaturen $T_1$ und $T_2$ sind. Bestimmen Sie die Schallgeschwindigkeit in Luft bei einer Temperatur von $30^\circ$C. (Hinweis: Absolute Temperaturen werden in Kelvin angegeben. Dabei gilt $T_K-273,15=T_C$.)
 \end{task}
+
 \dotfill
 \begin{task}
 Sch\"uler haben eine quadratische Fl\"ache bemalt. Da es sehr sch\"on geworden ist, d\"urfen sie die vier Quadratseiten um $8m$ verl\"angern. Dies bedeutet eine Vergr\"o\ss erung der Fl\"ache um $336m^2$. Welche Ma\ss e haben die alte und die neue bemalte Fl\"ache?
