@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.3)  11 SEP 2018 09:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.3)  11 SEP 2018 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -329,7 +329,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \fb@frh=\dimen128
 \FrameRule=\dimen129
 \FrameSep=\dimen130
-))
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/dashrule/dashrule.sty
 Package: dashrule 2013/03/28 v1.3 Dashed rules
 
@@ -337,6 +337,10 @@ Package: dashrule 2013/03/28 v1.3 Dashed rules
 Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
 )
 \c@hdr@segments=\count116
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks32
 ) (./day2.aux)
 \openout1 = `day2.aux'.
 
@@ -354,19 +358,19 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
- (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen131
 \scratchbox=\box28
 \nofMPsegments=\count118
 \nofMParguments=\count119
-\everyMPshowfont=\toks32
+\everyMPshowfont=\toks33
 \MPscratchCnt=\count120
 \MPscratchDim=\dimen132
 \MPnumerator=\count121
 \makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks33
+\everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -496,10 +500,10 @@ Package rerunfilecheck Info: File `day2.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 7832 strings out of 493014
- 112130 string characters out of 6133352
- 218706 words of memory out of 5000000
- 11226 multiletter control sequences out of 15000+600000
+ 7852 strings out of 493014
+ 112463 string characters out of 6133352
+ 219088 words of memory out of 5000000
+ 11243 multiletter control sequences out of 15000+600000
  13159 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,7n,28p,353b,677s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -520,7 +524,7 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on day2.pdf (2 pages, 173709 bytes).
+Output written on day2.pdf (2 pages, 173732 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
