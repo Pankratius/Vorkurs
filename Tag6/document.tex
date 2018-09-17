@@ -1,0 +1,37 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\begin{document}
+\noindent
+Die Grundidee hinter dem Gaussalgorithmus ist\\
+\textbf{Lemma:} Sei $A\in K^{m,n}$ eine Matrik über einem Körper $K$ und $T$ in $\mathrm{GL}_m(K)$ eine invertierbare Matrix. Dann gilt $$ \mathrm{Ker}(TA) = \mathrm{Ker}(A).$$\\
+	
+	Für den Gaussalgorithmus reichen jetzt bestimmte invertierbare Matrizen, um die gegebene Matrix auf reduzierte Zeilenstufenform zu bringen, an der man dann die Basisvektoren sofort ablesen kann. Diese Matrizen nennt man auch Elementarmatrizen, und sie korrespondieren genau zu den drei Operationen, die man auch beim "normalen" Umformen von Gleichungen macht:
+	\begin{enumerate}
+	\item Addieren des $a$-fachen der Zeile $i$ einer Matrix auf die Zeile $j$ ($a\in K$)
+	\item Multiplizieren der Zeile $i$ mit $d\in K$
+	\item Tauschen der Zeilen $i$ und $j$
+	\end{enumerate}
+	Eine Matrix, die bei einer $3\times 3$ Matrix die zweite Zeile mit 2 multipliziert, sieht zum Beispiel so aus:
+	\[ \begin{pmatrix} 1 & 0&0 \\0&2&0\\ 0&0&1\end{pmatrix}.\]
+	
+	
+	Was jetzt noch wichtig ist, ist dass diese Umformungen immer nacheinander ausgeführt werden, also dass man den $k+1$-ten Umformungsschritt auf die Matrix nach dem $k$-ten Umformungsschritt anwendet.
+	Hier jetzt ein Beispiel für eine generische Matrix $A\in M_2(\mathbb{Q})$, bei der man zuerst die zweite Zeile von der ersten und dann die erste Zeile von der zweiten Zeile subrtrahiert:
+	
+	$$ \begin{pmatrix} a&b\\c&d\end{pmatrix} \leadsto \begin{pmatrix}a-c&b-d\\c&d \end{pmatrix}\leadsto \begin{pmatrix}a-c&b-d\\c-(a-c)&d-(b-d)\end{pmatrix} = \begin{pmatrix}a-c & b-d\\2c-a & 2d-b\end{pmatrix}
+	$$
+	Mit Elementarmatrizen vom Typ 1 kann man das auch so schreiben:
+	$$ \begin{pmatrix}1&0\\-1&1 \end{pmatrix}\cdot \begin{pmatrix}1&-1\\0&1 \end{pmatrix}A = \begin{pmatrix}a-c&b-d\\2c-a&2d-b\end{pmatrix}
+	$$
+	Aber die Matrix
+	$$ \begin{pmatrix}1&0\\-1&1 \end{pmatrix}\cdot \begin{pmatrix}1&-1\\0&1 \end{pmatrix} = \begin{pmatrix} 1&-1\\-1&2\end{pmatrix}
+	$$
+	hat Determinante 1, ist also invertierbar, hat also den Kern von $A$ nicht verändert.
+	
+\end{document}
