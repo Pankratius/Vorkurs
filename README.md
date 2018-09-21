@@ -13,3 +13,5 @@
 [Tag 7](Tag7/day7.pdf)
 
 [Tag 8](Tag8/day8.pdf)
+
+[Tag 10](Tag10/day10.pdf)

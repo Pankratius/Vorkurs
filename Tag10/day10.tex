@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage{../vorkurs}
+\NewEnviron{killcontents}{}
+\let\proof\killcontents
+\let\endproof\endkillcontents
+\begin{document}
+\title{\line(1,0){250}\\Tag 10\\\line(1,0){250}}
+\date{}
+\author{\itshape Vorkurs Mathematik für Nebenfächler 2018}
+\maketitle
+\begin{framed}
+	\noindent \scriptsize
+	\textsc{Integrationstricks:} $\int f'(x)g(x)~dx =f(x)g(x)-\int f(x)g'(x)~dx$ (partielle Integration), $\int f(x)+g(x)~dx = \int f(x)~dx + \int g(x)~dx$, $\int \lambda f(x)~dx = \lambda \int f(x)~dx$ ($\lambda \in \mathbb{R}$)
+\end{framed}
+\section*{Aufgaben}
+\textsc{Wichtig:} Wir empfehlen, bei allen Aufgaben, soweit möglich, auf die Benutzung von CAS-Rechnern zu verzichten!
+\begin{task}
+	Aus einem Kartenspiel mit 32 verschiedenen Karten wird dreimal nacheinander eine Karte gezogen und anschlie\ss end wieder in den Stapel zur\" uckgelegt. Wie warscheinlich ist es, dreimal Herz-Dame zu ziehen?  
+	\item In einer Trommel liegen sieben Kugeln, die mit den Buchstaben $A,B,E,H,M,N,T$ beschriftet sind. Man zieht nacheinander f\" unf Kugeln, notiert sich den Buchstaben und legt die gezogene Kugel wieder in die Trommel zur\" uck. Wie gro\ss \ ist die Warscheinlichkeit daf\" ur, aus den notierten Buchstaben das Wort `MATHE' bilden zu k\" onnen? 
+\end{task}
+
+\begin{task}
+	Ein Fu\ss ballverein hat 15 aktive Spieler. Wie viele M\" oglichkeiten hat der Trainer hieraus eine Mannschaft von 11 Spieler zu bilden?
+\end{task}
+
+\begin{task}
+	\begin{itemize}
+		\item[a)]Beim klassichen Fu\ss balltoto muss man bei insgesamt 11 Spielen auf Unentschieden (0), Heimsieg (1) oder Ausw\" artssieg (2) tippen. Wie viele verschiedene Tipps sind hier m\" oglich?
+		\item[b)] Sie haben die Wahl, entweder beim Lotto `5 aus 25' oder beim Lotto `4 aus 20' mitzuspielen. Wobei ist die Chance auf einen Hauptgewinn h\" oher?
+		\item[c)] An einer Bushaltestelle besteigen vier Fahrg\" aste den Bus und finden sieben freie Sitzpl\" atze vor. Wie viele M\" oglichkeiten haben sie, sich auf vier dieser Pl\" atze zu verteilen?
+		\item[d)] Bei einem Sportturnier m\" ussen die zw\" olf teilnehmenden Mannschaften auf drei Gruppen mit je vier Mannschaften verteilt werden. Wie viele M\" oglichkeiten hat der Veranstalter hierf\" ur?
+	\end{itemize}
+\end{task}
+
+\begin{task}
+	Beim W\" urfeln mit einem Standardw\" urfel traten die sechs Augenzahlen mit folgenden absoluten H\" afigkeiten auf:
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		Augenzahl: & 1 & 2 & 3 & 4 & 5 & 6 \\ 
+		\hline 
+		H\" aufigkeit: & 137 & 140 & 127 & 120 & 140 & 133 \\ 
+		\hline 
+	\end{tabular}
+	
+	Berechnen Sie die relativen H\" aufigkeiten der folgenden Ereignisse in diesem Zufallsversuch:
+	\begin{eqnarray*}
+		A_1 &:& \text{Wurf einer 5}\\
+		A_2 &:& \text{Wurf einer geraden Zahl}\\
+		A_3 &:& \text{Wurf einener ungeraden Zahl, die nicht durch 3 teilbar ist}
+	\end{eqnarray*}
+\end{task}
+
+\begin{task}
+	Bei einer Tombola werden insgesamt 500 Lose verkauft; darunter ist ein Hauptgewinn, 25 hochwertige Gewinne, 140 Trostpreise, der Rest besteht aus Nieten. Wie hoch ist die Wahrscheinlichkeit f\" ur das Ereignis $G$, das darin besteht, \" uberhaupt etwas zu gewinnen?
+\end{task}
+
+\begin{task}
+	Die sechs Seiten eines W\" urfels seine mit den Zahlen
+	1,1,3,3,4 und 5 bedruckt. Wir betrachten drei Ereignisse
+	\begin{eqnarray*}
+		A &:& \text{Wurf einer geraden Zahl}\\
+		B &:& \text{Wurf einer durch 3 teilbaren Zahl}\\
+		C&:& \text{Wurf der Zahl 5}
+	\end{eqnarray*}
+	Zeigen Sie, dass diese drei Ereignisse paarweise unvereinbar sind, dass also jedes m\" ogliches Zweierp\" archen, das man aus diesen Ereignissen bilden kann, unvereinbar ist, und berechnen Sie auf zwei verschiedene Arten die Wahrscheinlichkeit der Vereinigung von je zweien dieser Ereignisse.
+	\item In der Unterstufe eines Gymnasiums werden die Fremdsprachen Englisch und Latein angeboten, jeder Sch\" uler muss mindestens eine Sprache erlernen. Von den insgesamt 50 Sch\" ulern erlernen 35 Englisch und 25 Latein. Wie gro\ss\ ist die Wahrscheinlichkeit, dass ein zuf\" allig ausgew\" ahlter Sch\" uler
+	\begin{itemize}
+		\item[a)] beide Sprachen erlernt,
+		\item[b)] nur Englisch erlernt,
+		\item[c)] nur eine Sprache erlernt?
+	\end{itemize}
+\end{task}
+\input{../endmatter.tex}
+\end{document}
